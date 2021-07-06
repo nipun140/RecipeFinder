@@ -11,7 +11,7 @@ export default function Navbar(props) {
         </p>
       </div>
       <div className="searchbar">
-        <img src="/search-icon.svg" alt="img" />
+        <img src="./search-icon.svg" alt="img" />
         <input
           type="text"
           name="recipe"
