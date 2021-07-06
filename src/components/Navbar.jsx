@@ -5,7 +5,7 @@ export default function Navbar(props) {
   return (
     <header>
       <div className="logo-container">
-        <img src="/hamburger.svg" alt="logo" />
+        <img src="./hamburger.svg" alt="logo" />
         <p>
           Recepie <br /> Finder
         </p>
