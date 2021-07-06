@@ -1,0 +1,78 @@
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.74);
+  z-index: 10;
+}
+
+.modal-content {
+  font-size: 2rem;
+  height: 80vh;
+  width: 90vw;
+  background-color: #ecf0f1;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  animation: show 0.5s forwards;
+  overflow-y: auto;
+}
+
+.dummy {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+#closeBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.7rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition: all 0.2s;
+}
+
+#closeBtn svg {
+  font-size: 3rem;
+}
+
+#closeBtn:hover {
+  background-color: white;
+  color: black;
+}
+
+@keyframes show {
+  0% {
+    bottom: 100%;
+    transform: translateX(-50%);
+  }
+
+  100% {
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+  }
+}
+
+.hide-anim {
+  animation: hide 0.5s forwards;
+}
+
+@keyframes hide {
+  0% {
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+  }
+
+  100% {
+    bottom: 100%;
+    transform: translateX(-50%);
+  }
+}
